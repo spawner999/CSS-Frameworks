@@ -33,6 +33,10 @@ body{
   font-size: 0.81em;
   padding: 2em 0;
 }
+.row{
+  margin: 0;
+  max-width: none;
+}
 
 .nav ul li{
   padding: 2em 0;
@@ -67,8 +71,9 @@ h1{
   font-style: italic;
   letter-spacing: -0.05em;
 }
-h1 i{
+i{
   color: #484640;
+  font-weight: bold;
 }
 
 ul li{
@@ -132,4 +137,22 @@ input, textarea{
   border-top: 1px solid #E2E2E0;
   text-align: right;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1023px){
+  .page{
+    margin: 0 auto;
+    max-width: none;
+    width: 80%;
+  }
+  .intro, .form, .center{
+    text-align: center;
+  }
+p, li{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+h1{
+  margin: 1em 0;
+}
 }
