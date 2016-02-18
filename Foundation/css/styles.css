@@ -1,11 +1,12 @@
 /* For testing only */
 
-/**:not(body):not(html) {
+*:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
-}*/
+}
 /* End for testing */
 
+/*GENERAL*/
 *{
   margin: 0;
   padding: 0;
@@ -23,21 +24,68 @@ body{
   font: normal 100%/1.28571429 Georgia, serif;
 }
 
+ul{
+  list-style: none;
+}
+
+ul li{
+  margin-bottom: 1.5em;
+}
+
+hr{
+  height: 6px;
+  background: url("../img/div.gif")
+}
+
+h1{
+  clear: both;
+  color: #969285;
+  text-transform: uppercase;
+  font: normal 3.3125em/0.75 Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-style: italic;
+  letter-spacing: -0.05em;
+}
+
+a{
+  text-decoration: none;
+}
+
+i{
+  color: #484640;
+  font-weight: bold;
+}
+
+h3, h3 a{
+  text-transform: uppercase;
+  color: #484640;
+}
+
 .page{
   width: 93%;
   max-width: 700px;
   margin: 0 auto;
 }
 
+/*MAIN SECTIONS*/
 .section{
   font-size: 0.81em;
   padding: 2em 0;
 }
+
+.section hr{
+ margin-bottom: 2em;
+}
+
 .row{
   margin: 0;
   max-width: none;
 }
 
+  /*nav*/
+.nav{
+  height: 100%;
+  overflow:auto;
+}
 .nav ul li{
   padding: 2em 0;
   margin: 0;
@@ -47,10 +95,7 @@ body{
   color: #484640;
 }
 
-ul{
-  list-style: none;
-}
-
+/*intro*/
 .intro h2{
   font-size: 1.3em;
 }
@@ -59,39 +104,11 @@ ul{
   margin-bottom: 1em;
 }
 
-hr{
-  height: 6px;
-  background: url("../img/div.gif")
-}
-
-h1{
-  color: #969285;
-  text-transform: uppercase;
-  font: normal 3.3125em/0.75 Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-style: italic;
-  letter-spacing: -0.05em;
-}
-i{
-  color: #484640;
-  font-weight: bold;
-}
-
-ul li{
-  margin-bottom: 1.5em;
-}
-
-a{
-  text-decoration: none;
-}
-
-h3, h3 a{
-  text-transform: uppercase;
-  color: #484640;
-}
-
+/*portfolio*/
 .portfolio ul li{
   position: relative;
 }
+
 .portfolio h2{
 background: rgba(0, 0, 0, 0.74);
 color: #DEDEDE;
@@ -106,7 +123,7 @@ text-transform: uppercase;
 font-size: 0.8em;
 }
 
-
+/*FOOTER*/
 fieldset{
 background: url("../img/hatch.png");
 font-size: 1.2em;
@@ -139,20 +156,24 @@ input, textarea{
   text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+/*MEDIA QUERIES*/
 @media screen and (min-width: 1023px){
   .page{
     margin: 0 auto;
     max-width: none;
     width: 80%;
   }
+
   .intro, .form, .center{
     text-align: center;
   }
-p, li{
+
+  p, li{
   font-size: 1.5em;
   margin-bottom: 1em;
-}
-h1{
+  }
+
+  h1{
   margin: 1em 0;
-}
+  }
 }
